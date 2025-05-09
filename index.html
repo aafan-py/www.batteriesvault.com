@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batteries Vault - Mumbai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .call img {
+            position: fixed !important;
+            bottom: 125px !important;
+            height: 45px !important;
+            width: 45px !important;
+            right: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .call img {
+                height: 35px !important;
+                width: 35px !important;
+                bottom: 105px !important;
+            }
+        }
+
+        .call img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        .whts img {
+            position: fixed !important;
+            bottom: 70px !important;
+            height: 45px !important;
+            width: 45px !important;
+            right: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .whts img {
+                height: 35px !important;
+                width: 35px !important;
+                bottom: 61px !important;
+            }
+        }
+
+        .whts img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+
+        hr {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-800 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">BatteriesVault</h1>
+        <p class="mt-2 text-sm">Sales & Service of Car & Motorcycle Batteries</p>
+    </header>
+
+    <!-- Hero -->
+    <section class="p-8 text-center bg-white">
+        <h2 class="text-2xl font-semibold mb-4">Reliable Power for Your Ride</h2>
+        <p class="mb-6 text-gray-600">
+            Top brands | Home Delivery | Battery Health Check | Emergency Jumpstart | Fuel Delivery |
+        </p>
+        <img src="img/img.jpg" alt="Battery" class="w-full md:h-96 object-cover object-center rounded-lg shadow-lg" />
+    </section>
+
+
+    <!-- Services -->
+    <section class="p-8 bg-gray-50">
+        <h3 class="text-xl font-bold mb-6 text-center">Our Services</h3>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/replacement.avif" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">Battery Replacement</h4>
+                <p class="text-sm text-gray-600">We offer instant battery replacement for all car & bike models.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/jumpstart.jpg" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">24/7*365 Jumpstart Service</h4>
+                <p class="text-sm text-gray-600">Stranded with a dead battery? We'll reach you within 30 minutes.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/healthcheck.webp" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">Battery Health Check</h4>
+                <p class="text-sm text-gray-600">Free battery check-up to keep you powered up & safe on the road.</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/healthcheck.webp" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">Fuel Delivery</h4>
+                <p class="text-sm text-gray-600">Fuel Delivery....</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/healthcheck.webp" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">On-site Minor Repair</h4>
+                <p class="text-sm text-gray-600">Minor Repair....</p>
+            </div>
+            <div class="bg-white p-6 rounded shadow">
+                <img src="img/healthcheck.webp" class="mb-4 rounded w-full h-48 object-cover" />
+                <h4 class="font-semibold text-lg mb-2">Flat Tyre</h4>
+                <p class="text-sm text-gray-600">Flat Tyre...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="p-8 bg-white">
+        <h3 class="text-xl font-bold mb-4 text-center">Contact Us</h3>
+        <form action="https://formsubmit.co/aafan.py@gmail.com" method="POST"
+            class="max-w-xl mx-auto bg-gray-50 p-6 rounded shadow space-y-4">
+            <!-- Formsubmit hidden inputs -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Contact Form Submission from BatteryZone">
+            <!-- Form fields -->
+            <input type="text" name="name" placeholder="Your Name" required class="w-full border px-4 py-2 rounded" />
+            <input type="email" name="email" placeholder="Your Email" required
+                class="w-full border px-4 py-2 rounded" />
+            <textarea name="message" placeholder="Your Message" rows="4" required
+                class="w-full border px-4 py-2 rounded"></textarea>
+            <button type="submit" class="bg-blue-800 text-white px-6 py-2 rounded hover:bg-blue-700">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <!--Start of WhatsApp Chat Script-->
+    <div class="whts">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=919930432351">
+            <img border="0" alt="whatsapp" src="img/chat-on-whatsapp.png" width="80" height="80"> </a>
+    </div>
+    <!--End of WhatsApp Chat Script-->
+
+    <!--Start of Call Script-->
+    <div class="call">
+        <a href="tel:+919930432351" </a>
+            <img border="0" alt="call" src="img/call.png" width="80" height="80"> </a>
+        <!--End of Call Script-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white text-center p-4 text-sm">
+        &copy; 2025 SB Enterprises. All rights reserved.
+    </footer>
+</body>
+
+</html>
